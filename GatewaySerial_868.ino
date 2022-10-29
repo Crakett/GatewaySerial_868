@@ -34,28 +34,26 @@
 * - TX (yellow) - blink fast on radio message transmitted. In inclusion mode will blink slowly
 * - ERR (red) - fast blink on error during transmission error or receive crc error
 *
+*
+*  V2 28/03/19
+*  - suppression MY_RFM69_ENABLE_ENCRYPTION
+*  - ajout MY_RFM69_IRQ_PIN
+*  - modification MY_DEFAULT_LED_BLINK_PERIOD de 300 à 30
 */
 
 // Enable debug prints to serial monitor
-#define MY_DEBUG
-
-
-// Enable and select radio type attached
-//#define MY_RADIO_NRF24
-//#define MY_RADIO_NRF5_ESB
-#define MY_RADIO_RFM69
-//#define MY_RADIO_RFM95
+//#define MY_DEBUG
 
 // For RFM69
+#define   MY_RADIO_RFM69
 #define   MY_RFM69_FREQUENCY RFM69_868MHZ
-#define   MY_IS_RFM69HW // Omit if your RFM is not "H"
-#define   MY_RFM69_IRQ_PIN 2
-#define   MY_RFM69_IRQ_NUM MY_RFM69_IRQ_PIN
+#define   MY_IS_RFM69HW
+#define   MY_RFM69_IRQ_PIN   2
+#define   MY_RFM69_NEW_DRIVER
 
-
-
-
-
+// chiffrement
+//#define   MY_RFM69_ENABLE_ENCRYPTION
+//#define   MY_SECURITY_SIMPLE_PASSWD "x8Ig.R76FjKL;e"
 
 
 // Set LOW transmit power level as default, if you have an amplified NRF-module and
@@ -84,7 +82,7 @@
 //#define MY_INCLUSION_MODE_BUTTON_PIN  3
 
 // Set blinking period
-#define MY_DEFAULT_LED_BLINK_PERIOD 300
+#define MY_DEFAULT_LED_BLINK_PERIOD 30
 
 // Inverses the behavior of leds
 //#define MY_WITH_LEDS_BLINKING_INVERSE
