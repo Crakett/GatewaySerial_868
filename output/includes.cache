@@ -1,0 +1,32 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/variants/eightanaloginputs"
+  },
+  {
+    "Sourcefile": "/Users/francoisstefanopappa/CloudStation/GITHUB/GatewaySerial_868/output/sketch/GatewaySerial_868.ino.cpp",
+    "Include": "MySensors.h",
+    "Includepath": "/Users/francoisstefanopappa/Documents/Arduino/libraries/MySensors"
+  },
+  {
+    "Sourcefile": "/Users/francoisstefanopappa/CloudStation/GITHUB/GatewaySerial_868/output/sketch/GatewaySerial_868.ino.cpp",
+    "Include": "SPI.h",
+    "Includepath": "/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/SPI/src"
+  },
+  {
+    "Sourcefile": "/Users/francoisstefanopappa/CloudStation/GITHUB/GatewaySerial_868/output/sketch/GatewaySerial_868.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/SPI/src/SPI.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]
